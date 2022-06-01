@@ -1,0 +1,22 @@
+{
+  "name": "tsc-lib-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn rollup -c",
+    "build:dev": "yarn rollup -c --stage dev",
+    "build:staging": "yarn rollup -c --stage staging",
+    "build:prod": "yarn rollup -c --stage prod"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-replace": "^4.0.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "rollup": "^2.75.4"
+  }
+}
